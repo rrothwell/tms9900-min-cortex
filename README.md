@@ -38,6 +38,9 @@ The USB serial module pinout just happens to match the USB pinout on the board, 
 
 The INT jumper on the board has to be installed. Without it the unix firmware locks up just before the login prompt.
 
-A USB connected media reader module with CF Card support was used to inspect the contents of a selected Compact Flash card to verify that it was working. Under Windows 10, the card was (slow) formatted as FAT32 with 4096 byte allocation blocks. The 4 supplied files, MDEX_DEV0.DSK, MDEX_DEV1.DSK, LSX_DEV0.DSK, LSX_DEV1.DSK were then copied to the CF Card as mounted by the reader.
+A USB connected media reader module with CF Card support was used to inspect the contents of a selected Compact Flash card to verify that it was working. Under Windows 10, the card was (slow) formatted as FAT32 with 4096 byte allocation blocks. The 4 supplied files, MDEX_DEV0.DSK, MDEX_DEV1.DSK, LSX_DEV0.DSK, LSX_DEV1.DSK were then copied to the CF Card as mounted by the reader. The CF card is then transferred to the Mini-Cortex.
 
 ![image](https://github.com/user-attachments/assets/a5c0f6d0-6a57-4438-9a1e-caff2b0c7e94)
+
+## Verification ##
+
