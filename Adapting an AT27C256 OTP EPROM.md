@@ -1,7 +1,7 @@
 # Adapting an AT27C256 OTP EPROM #
 
 The Mini-Cortex board uses an AT28C256 for firmware storage. 
-It just happens that I have a few AT27C256 OTP EPROM's on hand. \
+It just happens that I have a few AT27C256 OTP EPROM's on hand.
 These are faster at 70ns, but have a slightly different  pinout.
 
 The datasheets are located at:
