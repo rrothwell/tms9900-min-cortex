@@ -43,4 +43,5 @@ A USB connected media reader module with CF Card support was used to inspect the
 ![image](https://github.com/user-attachments/assets/a5c0f6d0-6a57-4438-9a1e-caff2b0c7e94)
 
 ## Verification ##
-
+EEPROM 1 was inserted into the PCB socket, the board was reset and each option exercised in turn by keying its number. To exit the option the board was reset. The following tests were run:
+1. Some monitor commands were executed. Note that the commands for TiBug and EVMBug are different. The commands are documented at ["TIBUG and EVMBUG System Monitors"'(http://www.stuartconner.me.uk/tibug_evmbug/tibug_evmbug.htm#evmbug).
