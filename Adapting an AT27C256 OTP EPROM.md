@@ -12,5 +12,5 @@ On the AT27C256 IC:
 1. The VPP(1) pin needs to be raised outward and joined to the VCC(28) pin. 
 2. The A14(27) pin needs to be raised outward and connected to the A14(1) board location.
 This can be accomplished with the IC inserted into a spacer socket and an little solder.
-![AT27C256 Top](/AT27C256 top.jpeg)
-![AT27C256 Bottom](AT27C256%20top.jpeg)
+![AT27C256 Top](/AT27C256%20top.jpeg)
+![AT27C256 Bottom](AT27C256%20bottom.jpeg)
