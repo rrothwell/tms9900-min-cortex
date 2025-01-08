@@ -45,5 +45,5 @@ A USB connected media reader module with CF Card support was used to inspect the
 ## Verification ##
 EEPROM 1 was inserted into the PCB socket, the board was reset and each option exercised in turn by keying its number. To exit the option the board was reset. The following tests were run:
 1. Some monitor commands were executed. Note that the commands for TiBug and EVMBug are different. The commands are documented at ["TIBUG and EVMBUG System Monitors"](http://www.stuartconner.me.uk/tibug_evmbug/tibug_evmbug.htm#evmbug).
-2. The BASIC command PRINT 2 + 3 wqas executed.
+2. The BASIC command PRINT 2 + 3 was executed.
 3. The commnand to list directories in both DSK images was executed. The commands are documented at ["MDEX User Guide"](http://www.powertrancortex.com/mdex/MDEX%20User%20Guide.pdf).
