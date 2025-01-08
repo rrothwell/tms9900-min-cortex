@@ -43,7 +43,10 @@ A USB connected media reader module with CF Card support was used to inspect the
 ![image](https://github.com/user-attachments/assets/a5c0f6d0-6a57-4438-9a1e-caff2b0c7e94)
 
 ## Verification ##
+
 EEPROM 1 was inserted into the PCB socket, the board was reset and each option exercised in turn by keying its number. To exit the option the board was reset. The following tests were run:
 1. Some monitor commands were executed. Note that the commands for TiBug and EVMBug are different. The commands are documented at ["TIBUG and EVMBUG System Monitors"](http://www.stuartconner.me.uk/tibug_evmbug/tibug_evmbug.htm#evmbug).
-2. The BASIC command PRINT 2 + 3 was executed.
-3. The commnand to list directories in both DSK images was executed. The commands are documented at ["MDEX User Guide"](http://www.powertrancortex.com/mdex/MDEX%20User%20Guide.pdf).
+2. The BASIC command PRINT 2 + 3 was executed. BASIC is documented at ["Powertran Cortex - Cortex Power BASIC and Assembly Language Monitor User's Guide
+"](http://www.powertrancortex.com/basicandcdos/CORTEX%20BASIC%20Manual%20v2.pdf)
+3. The command to list directories in both FD DSK images was executed. The commands are documented at ["MDEX User Guide"](http://www.powertrancortex.com/mdex/MDEX%20User%20Guide.pdf). cat 1 list files in disk 1 and cat 2 list files in disk 2.
+4. There are two unix volumes: LSX_DEV0.DSK and LSX_DEV1.DSK located on the Compact Flash FAT32 filesystem. The status of volumes can be checked via the command: mount. This returns /dev/dsk0 on /. This first volume is auto-mounted.  The command: ls shows the contents of the root login directory. The command: ls /mnt shows the contents of the mnt directory and initialy it will be empty.  The second DEV.DSK is not mounted by default. To mount this use the command: /etc/mount /dev/dsk1 /mnt. ls /mnt now shows the contents of the mnt directory, which is equivalent to the contents of LSX_DEV1.DSK.
