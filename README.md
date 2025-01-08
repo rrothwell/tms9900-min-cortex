@@ -28,7 +28,7 @@ Three sets of firmware are provided:
 
 Connection requires the serial terminal software on the PC to use 9600 baud, 7 bits, even parity, 1 stop bit, no flow control. After reset (button press on the PCB) there is no activity on the terminal, but it responds to a keypress by displaying a firmware selection menu with 1, 2 or 4 items, depending on which firmware is used.
 
-## Description ##
+## Assembly ##
 
 A component kit was purchased via eBay user hth-tech. Search for "TI TMS9995 Mini Cortex Homebrew IC Kit". The PCB's for the mini-cortex and the compact flash daughter board were ordered directly from Stuart Conner. Also from eBay, a range of small capacity Compact Flash drives were purchased for testing.
 
