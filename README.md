@@ -27,3 +27,17 @@ Three sets of firmware are provided:
 ### Connection ###
 
 Connection requires the serial terminal software on the PC to use 9600 baud, 7 bits, even parity, 1 stop bit, no flow control. After reset (button press on the PCB) there is no activity on the terminal, but it responds to a keypress by displaying a firmware selection menu with 1, 2 or 4 items, depending on which firmware is used.
+
+## Description ##
+
+A component kit was purchased via eBay user hth-tech. Search for "TI TMS9995 Mini Cortex Homebrew IC Kit". The PCB's for the mini-cortex and the compact flash daughter board were ordered directly from Stuart Conner. Also from eBay, a range of small capacity Compact Flash drives were purchased for testing.
+
+The board was soldered with turned-pin sockets and other components. The PCB was cleaned using a specialised flux-removal detergent and then isopropanol in an ultrasonic bath. Metal standoffs were used to mount the compact flash daughter board. The screws were shortened a little with a miniature abrasive disc driven by a drill. Standoffs were also attached at the corners of the PCB to avoid shorts when laid on a conductive surface.
+
+The USB serial module pinout just happens to match the USB pinout on the board, so no further wiring was required. Due to some confusion in starting unix a regulated 5V power supply was attached, and the 5V link on the USB serial module was cut. This provides power supply levels closer to 5V, but its probably unnecessary.
+
+The INT jumper on the board has to be installed. Without it the unix firmware locks up just before the login prompt.
+
+A USB connected media reader module with CF Card support was used to inspect the contents of a selected Compact Flash card to verify that it was working. Under Windows 10, the card was (slow) formatted as FAT32 with 4096 byte allocation blocks. The 4 supplied files, MDEX_DEV0.DSK, MDEX_DEV1.DSK, LSX_DEV0.DSK, LSX_DEV1.DSK were then copied to the CF Card as mounted by the reader.
+
+![image](https://github.com/user-attachments/assets/a5c0f6d0-6a57-4438-9a1e-caff2b0c7e94)
